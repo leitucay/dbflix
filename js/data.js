@@ -86,23 +86,23 @@ window.DBFLIX = {
 
     /* ---------------- SERIES ---------------- */
     {
-      id: "series-1", category: "series", title: "Sample Series One",
-      date: "2026-08-20", year: 2026,
-      poster: "images/posters/series-1.jpg", banner: "images/banners/series-1.jpg",
-      description: "A sample series with playable episodes. Pick an episode from the list and it plays right inside the site.",
+      id: "series-1", category: "series", title: "Teen Clash",
+      date: "2023-03-17", year: 2023,
+      poster: "images/posters/teenclash.jpg", banner: "images/banners/series-1.jpg",
+      description: "An aspiring musician who is bent on joining her school's music jam in hopes of redeeming herself from a past embarrassment meets a charming songwriter who will help her overcome the struggles in her journey. Bianca De Vera as Yannie",
       episodes: [
-        { title: "Episode 1", youtube: "jNQXAC9IVRw" },
+        { title: "Episode 1", youtube: "https://www.youtube.com/watch?v=QaOsrFFQYe8" },
         { title: "Episode 2", youtube: "jNQXAC9IVRw" },
         { title: "Episode 3", youtube: "jNQXAC9IVRw" }
       ],
-      tags: ["mystery"], featured: true
+      tags: ["teen drama"], featured: true
     },
     {
-      id: "series-2", category: "series", title: "Sample Series Two",
-      date: "2026-06-05", year: 2026,
-      poster: "images/posters/series-2.jpg", banner: "images/banners/series-2.jpg",
-      description: "A sample series that streams elsewhere. Clicking it opens the streaming link.",
-      streamUrl: "https://example.com/watch/series-two", platform: "Your Streaming Platform"
+      id: "series-2", category: "series", title: "The Secrets of Hotel 88",
+      date: "2026-02-26", year: 2026,
+      poster: "images/posters/h88.jpeg", banner: "images/banners/series-2.jpg",
+      description: "Two estranged families reunite when Hotel 88 reopens, but the former best friends who own it are found dead. Their children must share the inheritance while uncovering buried secrets and the truth about their fathers' deaths. Bianca De Vera as Jade Almazan and Dustin Yu as Edward Arellano",
+      streamUrl: "https://www.iwanttfc.com/details/843dd7ea-8324-411f-9853-4e499544523e", platform: "iWant"
     },
 
     /* ---------------- MUSIC VIDEOS ---------------- */
