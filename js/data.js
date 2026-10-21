@@ -22,12 +22,17 @@
      banner       wide image   (everything else + Home banner) e.g. "images/banners/movie-3.jpg"
                   -> For YouTube videos you can leave poster/banner empty:
                      the YouTube thumbnail is used automatically.
+     previewVideo path to a hosted video file (e.g. "images/previews/movie-3-trailer.mp4").
+                  Plays in the movie/series preview. If youtube is also set, visitors can switch
+                  between the uploaded preview and the embedded YouTube video.
+     bannerVideo  path to a hosted wide video file. Plays muted, automatically and on loop
+                  in the Home banner when this item is featured.
      youtube      a YouTube link OR the 11-character video ID.
                   The video plays inside the site AND has a
                   "Watch on YouTube" button (so views still count there).
-     streamUrl    link to where it streams (Netflix, Viu, iWantTFC, etc.).
-                  MOVIES/SERIES with a streamUrl go straight to that link when clicked.
+     streamUrl    link to where it streams (Netflix, Prime Video, Max, Viu, iWantTFC, etc.).
      platform     name shown on the button, e.g. "Netflix"
+     watchOptions optional list of { platform, url } objects for multiple streaming services.
      whereToWatch text for items NOT on streaming yet, e.g. "In cinemas Dec 25"
      details      extra info as pairs, e.g. { "Date": "Dec 25, 2026", "Venue": "SM Arena" }
      tags         e.g. ["comedy", "drama"]
