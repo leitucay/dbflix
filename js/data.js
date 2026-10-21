@@ -72,13 +72,11 @@ window.DBFLIX = {
     /* ---------------- MOVIES ---------------- */
     {
       id: "movie-1", category: "movies", title: "Love You So Bad",
-      date: "2025-12-25", year: 2025, duration: "1h 52",
-      poster: "images/posters/lsyb_poster.jpeg", banner: "images/banners/movie-2.jpg",
+      date: "2025-12-25", year: 2025, duration: "1h 52m",
+      poster: "images/posters/lysb.jpeg", banner: "images/banners/movie-1.jpg",
       description: "Sassy, confident, and unapologetically herself, college senior Savannah is determined to live life on her own terms. She finds herself torn between two different men: bad boy and chich magnet L.A. who fuels her wild side, and principled and ambitious Vic who challenges her to grow. As old wounds resurface and difficult choices confront her, she must devide who she really wants to be and who she dares to love.",
-      youtube: "https://www.netflix.com/search?q=love%20you%20so%20bad&jbv=82735088",
-      whereToWatch: "Avaible in Netflix",
-      details: { "Release": "Dec 25, 2026", "Where": "Cinemas nationwide" },
-      tags: ["Romantic comedy", "Coming-of-age drama"]
+      streamUrl: "https://www.netflix.com/search?q=love%20you%20so%20bad&jbv=82735088", platform: "Netflix",
+      tags: ["romantic comedy", "coming-of-age drama"], featured: true
     },
     {
       id: "movie-2", category: "movies", title: "Guilty Pleasure",
