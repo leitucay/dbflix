@@ -154,16 +154,50 @@ window.DBFLIX = {
 
     /* ---------------- GUESTINGS / INTERVIEWS ---------------- */
     {
-      id: "guest-1", category: "guestings", title: "Sample Talk Show Guesting",
-      date: "2026-09-02", youtube: "jNQXAC9IVRw",
-      description: "A sample guesting on a talk show."
+      id: "guest-1", category: "guestings", title: "Kapamilya Chat",
+      date: "2025-07-01", youtube: "https://www.youtube.com/watch?v=Rpm-2qLsnoA&list=PL2YB7ervGvwm8B-wtxvjZFqNSSpFbDWdD",
+      description: "Kapamilya Chat Dustin Yu and Bianca De Vera"
     },
     {
-      id: "guest-2", category: "guestings", title: "Sample Magazine Interview",
-      date: "2026-05-22", youtube: "jNQXAC9IVRw",
-      description: "A sample sit-down interview."
+      id: "guest-2", category: "guestings", title: "24 Oras: DusBi",
+      date: "2025-07-01", youtube: "https://www.youtube.com/watch?v=88mbSLeCMDw&list=PL2YB7ervGvwm8B-wtxvjZFqNSSpFbDWdD&index=2",
+      description: "Aminadong overwhelmed pa rin ngayon sa love and support sina Dustin Yu at Bianca De Vera sa pagbabalik nila sa outside world. But the question remains para sa duo: Ano na kaya ang relationship status nila sa paglabas ng Bahay ni Kuya?"
     },
-
+    {
+      id: "guest-3", category: "guestings", title: "DUSBI, maagang nagpakilig sa Unang Hirit",
+      date: "2025-07-02", youtube: "https://www.youtube.com/watch?v=Xp9RttbK2pk&list=PL2YB7ervGvwm8B-wtxvjZFqNSSpFbDWdD&index=3",
+      description: "From housemates to soulmates?! Ang first live interview ng DUSBI na sina Dustin Yu at Bianca De Vera"
+    },
+    {
+      id: "guest-4", category: "guestings", title: "Unang Hirit: Welcome back to the outside world, Dustin Yu and Bianca De Vera!",
+      date: "2025-07-02", youtube: "https://www.youtube.com/watch?v=vOUsDVaWMJY&list=PL2YB7ervGvwm8B-wtxvjZFqNSSpFbDWdD&index=4",
+      description: "Mula sa loob ng Bahay ni Kuya hanggang sa morning TV, live na makakasama sa studio ang PBB duo na sina Dustin Yu at Bianca De Vera! Kasama ang kanilang fans at isang espesyal na coffee truck setup, welcome home ang feels sa kanilang unang morning show guesting together sa Unang Hirit!"
+    },
+    {
+      id: "guest-4", category: "guestings", title: "TiktoClock",
+      date: "2025-07-02", youtube: "https://www.youtube.com/watch?v=Bw8ke9gKjJs&list=PL2YB7ervGvwm8B-wtxvjZFqNSSpFbDWdD&index=5",
+      description: "Dinala ng 'Pinoy Big Brother' ex-housemates Bianca De Vera at Dustin Yu ang pagiging competitive nila sa outside world! Tutukan ang pakikipagkulitan nila sa Tiktropa!"
+    },
+    {
+      id: "guest-5", category: "guestings", title: "Fast Talk with Boy Abunda: Dustin Yu at Bianca De Vera, may bwelta sa bashers!",
+      date: "2025-07-02", youtube: "https://www.youtube.com/watch?v=IB2wPyNt44M&list=PL2YB7ervGvwm8B-wtxvjZFqNSSpFbDWdD&index=6",
+      description: "Sa kabila ng maraming fans at supporters, hindi pa rin nakaligtas ang ‘PBB’ duo nina Dustin Yu at Bianca De Vera sa mga bashers. Ngayon, haharapin na nila ang mga matitinding komento at opinyon ng taumbayan!"
+    },
+    {
+      id: "guest-6", category: "guestings", title: "Alam Na Dis! | DZMM Teleradyo",
+      date: "2025-07-02", youtube: "https://www.youtube.com/watch?v=7GHFc5LywFc&list=PL2YB7ervGvwm8B-wtxvjZFqNSSpFbDWdD&index=7",
+      description: "Dustin Yu and Bianca De Vera in DZMM Teleradyo"
+    },
+    {
+      id: "guest-7", category: "guestings", title: "DusBia, ano'ng mensahe sa bashers?",
+      date: "2025-07-02", youtube: "https://www.youtube.com/watch?v=ODKx8bw0tfQ&list=PL2YB7ervGvwm8B-wtxvjZFqNSSpFbDWdD&index=8",
+      description: "Dustin Yu and Bianca De Vera in DZMM Teleradyo"
+    },
+    {
+      id: "guest-8", category: "guestings", title: "#KPRGAsks #DusBi | Dustin Yu and Bianca de Vera",
+      date: "2025-07-03", youtube: "https://www.youtube.com/watch?v=tUwxCFGvF6s&list=PL2YB7ervGvwm8B-wtxvjZFqNSSpFbDWdD&index=9",
+      description: "Dustin Yu at Bianca De Vera sumabak sa KPRG Asks with a twist, panoorin ang masayang kwentuhan nila dito. Ano nga kaya ang mga favorite tasks nila sa loob ng Bahay ni Kuya? At ngayong nasa labas na, ano nga kaya ang mga gusto nilang gawin together? 😍💛"
+    },
     /* ---------------- VLOGS ---------------- */
     {
       id: "vlog-1", category: "vlogs", title: "Sample Vlog: A Day With Us",
