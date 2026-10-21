@@ -49,7 +49,7 @@ window.DBFLIX = {
     name: "DBFLIX",
     tagline: "The fan-made home of everything we love.",
     logoImage: "",   // optional: e.g. "images/logo.png" (leave "" to use the text logo)
-    footer: "DBFLIX is an unofficial, fan-made website made by fans, for fans. It is not affiliated with Netflix or with the people featured here. All videos, images and names belong to their respective owners."
+    footer: "DBFLIX is an unofficial, fan-made website made by tyocolet, for fans. It is not affiliated with Netflix or with the people featured here. All videos, images and names belong to their respective owners."
   },
 
   about: {
