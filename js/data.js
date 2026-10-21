@@ -91,7 +91,7 @@ window.DBFLIX = {
     {
       id: "series-1", category: "series", title: "Teen Clash",
       date: "2023-03-17", year: 2023,
-      poster: "images/posters/teenclash.jpeg", banner: "images/banners/teenclashprev.mp4,
+      poster: "images/posters/teenclash.jpeg", banner: "images/banners/teenclashprev.mp4",
       description: "An aspiring musician who is bent on joining her school's music jam in hopes of redeeming herself from a past embarrassment meets a charming songwriter who will help her overcome the struggles in her journey. Bianca De Vera as Yannie",
       episodes: [
         { title: "Episode 1", youtube: "https://www.youtube.com/watch?v=QaOsrFFQYe8" },
