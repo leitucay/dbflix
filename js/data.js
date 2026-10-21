@@ -104,6 +104,20 @@ window.DBFLIX = {
       description: "Two estranged families reunite when Hotel 88 reopens, but the former best friends who own it are found dead. Their children must share the inheritance while uncovering buried secrets and the truth about their fathers' deaths. Bianca De Vera as Jade Almazan and Dustin Yu as Edward Arellano",
       streamUrl: "https://www.iwanttfc.com/details/843dd7ea-8324-411f-9853-4e499544523e", platform: "iWant"
     },
+    {
+      id: "series-3", category: "series", title: "Mano Po Legacy: The Family Fortune",
+      date: "2026-02-26", year: 2026,
+      poster: "images/posters/manopo.jpeg", banner: "images/banners/series-2.jpg",
+      description: "A young woman lands her dream job at a real estate empire - but her new boss's family is embroiled in a bitter feud for control of the company. Dustin Yu as Kenneth Chan",
+      streamUrl: "https://www.netflix.com/search?q=mano%20po&jbv=83036429", platform: "Netflix"
+    },
+    {
+      id: "series-4", category: "series", title: "Black Rider",
+      date: "2023-11-06", year: 2025,
+      poster: "images/posters/blackrider.jpeg", banner: "images/banners/series-2.jpg",
+      description: "A delivery driver becomes a vigilante on his motorcycle and faces a crime syndicate that threatens his city. Dustin Yu as Timothy Geronimo",
+      streamUrl: "https://www.youtube.com/watch?v=CIQIE0H379E&list=PL41jCByLB53RYVya8vPeXvf2aIFs1gV7o", platform: "Youtube"
+    },
 
     /* ---------------- MUSIC VIDEOS ---------------- */
     {
