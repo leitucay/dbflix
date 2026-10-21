@@ -68,14 +68,14 @@ window.DBFLIX = {
     {
       id: "movie-1", category: "movies", title: "Love You So Bad",
       date: "2025-25-12", year: 2025, duration: "1h 52m",
-      poster: "images/posters/movie-1.jpg", banner: "images/banners/movie-1.jpg",
+      poster: "images/posters/lysb_poster.jpeg", banner: "images/banners/movie-1.jpg",
       description: "A sample movie that IS available on streaming. Clicking its poster goes straight to the streaming link. Hover and press the (i) button to see its details instead.",
       streamUrl: "https://example.com/watch/movie-one", platform: "Your Streaming Platform",
       tags: ["drama", "romance"], featured: true
     },
     {
-      id: "movie-2", category: "movies", title: "Sample Movie Two",
-      date: "2026-10-01", year: 2026, duration: "1h 52",
+      id: "movie-2", category: "movies", title: "Love You So Bad",
+      date: "2025-12-25", year: 2025, duration: "1h 52",
       poster: "images/posters/lsyb_poster.jpeg", banner: "images/banners/movie-2.jpg",
       description: "Sassy, confident, and unapologetically herself, college senior Savannah is determined to live life on her own terms. She finds herself torn between two different men: bad boy and chich magnet L.A. who fuels her wild side, and principled and ambitious Vic who challenges her to grow. As old wounds resurface and difficult choices confront her, she must devide who she really wants to be and who she dares to love.",
       youtube: "https://www.netflix.com/search?q=love%20you%20so%20bad&jbv=82735088",
@@ -107,15 +107,15 @@ window.DBFLIX = {
 
     /* ---------------- MUSIC VIDEOS ---------------- */
     {
-      id: "mv-1", category: "music-videos", title: "Sample Music Video One",
-      date: "2026-10-10", youtube: "jNQXAC9IVRw",
-      description: "Official music video. Plays here and can also be opened on YouTube.",
+      id: "mv-1", category: "music-videos", title: "Ngiti",
+      date: "2026-04-25", youtube: "https://www.youtube.com/watch?v=f4Q7PTQ56Ck&list=RDf4Q7PTQ56Ck&start_radio=1",
+      description: "Sa kabila ng hirap at sakit, may pag-asang darating ang dahilan para ngumiti.",
       featured: true
     },
     {
-      id: "mv-2", category: "music-videos", title: "Sample Music Video Two",
-      date: "2026-07-18", youtube: "jNQXAC9IVRw",
-      description: "Another sample music video."
+      id: "mv-2", category: "music-videos", title: "Kinakabahan",
+      date: "2025-09-11", youtube: "https://www.youtube.com/watch?v=j8mlMYOLlD8&list=RDj8mlMYOLlD8&start_radio=1",
+      description: "Kapag lumalalim na ang nararamdaman, kaya mo bang panindigan? Feel REAL KILIG VIBES in KINAKABAHAN Official Music Video starring Bianca De Vera and Dustin Yu #DustBia in their first ever official project together."
     },
 
     /* ---------------- EVENTS ---------------- */
