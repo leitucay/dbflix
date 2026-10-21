@@ -66,8 +66,8 @@ window.DBFLIX = {
 
     /* ---------------- MOVIES ---------------- */
     {
-      id: "movie-1", category: "movies", title: "Sample Movie One",
-      date: "2026-09-12", year: 2026, duration: "1h 52m",
+      id: "movie-1", category: "movies", title: "Love You So Bad",
+      date: "2025-25-12", year: 2025, duration: "1h 52m",
       poster: "images/posters/movie-1.jpg", banner: "images/banners/movie-1.jpg",
       description: "A sample movie that IS available on streaming. Clicking its poster goes straight to the streaming link. Hover and press the (i) button to see its details instead.",
       streamUrl: "https://example.com/watch/movie-one", platform: "Your Streaming Platform",
@@ -75,13 +75,13 @@ window.DBFLIX = {
     },
     {
       id: "movie-2", category: "movies", title: "Sample Movie Two",
-      date: "2026-10-01", year: 2026, duration: "2h 04m",
-      poster: "images/posters/movie-2.jpg", banner: "images/banners/movie-2.jpg",
-      description: "A sample movie that is NOT on streaming yet. Clicking it opens this details pop-up that tells fans where and when to watch it.",
-      youtube: "jNQXAC9IVRw",
-      whereToWatch: "In cinemas starting December 25, 2026. Streaming date to be announced.",
+      date: "2026-10-01", year: 2026, duration: "1h 52",
+      poster: "images/posters/lsyb_poster.jpeg", banner: "images/banners/movie-2.jpg",
+      description: "Sassy, confident, and unapologetically herself, college senior Savannah is determined to live life on her own terms. She finds herself torn between two different men: bad boy and chich magnet L.A. who fuels her wild side, and principled and ambitious Vic who challenges her to grow. As old wounds resurface and difficult choices confront her, she must devide who she really wants to be and who she dares to love.",
+      youtube: "https://www.netflix.com/search?q=love%20you%20so%20bad&jbv=82735088",
+      whereToWatch: "Avaible in Netflix",
       details: { "Release": "Dec 25, 2026", "Where": "Cinemas nationwide" },
-      tags: ["comedy", "family"]
+      tags: ["Romantic comedy", "Coming-of-age drama"]
     },
 
     /* ---------------- SERIES ---------------- */
