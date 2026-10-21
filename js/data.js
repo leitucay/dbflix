@@ -200,14 +200,34 @@ window.DBFLIX = {
     },
     /* ---------------- VLOGS ---------------- */
     {
-      id: "vlog-1", category: "vlogs", title: "Sample Vlog: A Day With Us",
-      date: "2026-10-18", youtube: "jNQXAC9IVRw",
-      description: "A sample vlog."
+      id: "vlog-1", category: "vlogs", title: "what I would wear STYLE CHALLENGE! | Xoxo, Bianca",
+      date: "2022-10-05", youtube: "https://www.youtube.com/watch?v=C_xzGQFuWdk",
+      description: "First episode of xoxo, Bianca"
     },
     {
-      id: "vlog-2", category: "vlogs", title: "Sample Vlog: Travel Edition",
-      date: "2026-08-09", youtube: "jNQXAC9IVRw",
-      description: "Another sample vlog."
+      id: "vlog-2", category: "vlogs", title: "SHOOTING RANGE WITH TOX | Xoxo, Bianca",
+      date: "2022-10-12", youtube: "https://www.youtube.com/watch?v=wfsh25hfuhY",
+      description: ""
+    },
+    {
+      id: "vlog-3", category: "vlogs", title: "ANSWERING YOUR ASSUMPTIONS ABOUT ME + MAKEUP Q&A | Xoxo, Bianca",
+      date: "2022-10-19", youtube: "https://www.youtube.com/watch?v=NLWP-pKCjQM",
+      description: ""
+    },
+    {
+      id: "vlog-4", category: "vlogs", title: "2 Good 2 Be True Lock-In Taping Vlog | Xoxo, Bianca",
+      date: "2022-10-29", youtube: "https://www.youtube.com/watch?v=NLWP-pKCjQM",
+      description: ""
+    },
+    {
+      id: "vlog-5", category: "vlogs", title: "Rise & Go BTS (North Adventures!)",
+      date: "2023-07-15", youtube: "https://www.youtube.com/watch?v=JSlVofTd9yA&t=50s",
+      description: ""
+    },
+    {
+      id: "vlog-6", category: "vlogs", title: "BIRTHDAY SHOOT BTS",
+      date: "2024-02-07", youtube: "https://www.youtube.com/watch?v=ph-mhQwCiSI&t=24s",
+      description: ""
     },
 
     /* ---------------- BEHIND THE SCENES ---------------- */
