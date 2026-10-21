@@ -30,13 +30,28 @@ Copy any `{ ... }` block inside `items`, paste it, and edit it:
   date: "2026-12-25",                  // newest first
   poster: "images/posters/movie-3.jpg",
   banner: "images/banners/movie-3.jpg",
+  previewVideo: "images/previews/movie-3-trailer.mp4",
+  bannerVideo: "images/banners/movie-3-banner.mp4",
   description: "Short story blurb.",
-  streamUrl: "https://...",            // ON streaming -> clicking goes to this link
+  streamUrl: "https://...",            // one streaming option
   platform: "Netflix",
-  whereToWatch: "In cinemas Dec 25"    // NOT on streaming -> shows these details instead
+  watchOptions: [
+    { platform: "Prime Video", url: "https://..." },
+    { platform: "Max", url: "https://..." }
+  ],
+  whereToWatch: "In cinemas Dec 25"
 }
 ```
 
+- **Movie and series posters:** clicking opens a preview with the title details and watch links. Add `previewVideo`
+  to play a hosted trailer in the preview. If the title also has a YouTube video or series episodes, visitors
+  can switch to the embedded YouTube player.
+- **Upload/host preview videos:** this is a static site, so video files cannot be uploaded through the page.
+  Add the file to your site (for example, `images/previews/movie-3-trailer.mp4`) and set its path in `previewVideo`.
+  `bannerVideo` works the same way for the featured Home banner and plays muted, automatically, and on loop.
+  Use a browser-compatible MP4 video and keep files reasonably small for faster loading.
+- **Streaming services:** use `streamUrl` and `platform` for one service, or `watchOptions` for several.
+  Each service appears as its own watch button in the preview.
 - **YouTube videos:** paste the link or the 11-character ID in `youtube:`. It plays inside the site, with a
   **Watch on YouTube** button so views still count on YouTube. If you skip `poster`/`banner`, the YouTube
   thumbnail is used automatically.

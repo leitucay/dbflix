@@ -15,9 +15,9 @@
   const CATS = [
     { key: 'home', label: 'Home' },
     { key: 'movies', label: 'Movies', type: 'poster',
-      desc: 'Every movie in one place. Streaming now? Click to go straight to it. Not yet? You\'ll see where and when to watch.' },
+      desc: 'Browse movies, watch a preview, and find where each title is available.' },
     { key: 'series', label: 'Series', type: 'poster',
-      desc: 'Binge-worthy series, episode by episode.' },
+      desc: 'Browse series, watch a preview or episode, and find where each title is available.' },
     { key: 'music-videos', label: 'Music Videos', type: 'wide',
       desc: 'Press play and sing along - right here on the site.' },
     { key: 'events', label: 'Events', type: 'wide',
@@ -71,7 +71,7 @@
   function primary(it) {
     const cat = catOf(it.category) || {};
     const yt = ytId(it.youtube);
-    if (it.streamUrl && (cat.type === 'poster' || !yt)) {
+    if (it.streamUrl && cat.type !== 'poster' && !yt) {
       window.open(it.streamUrl, '_blank', 'noopener');
     } else {
       openModal(it.id);
@@ -156,8 +156,12 @@
     const cat = catOf(it.category) || { label: '' };
     const yt = ytId(it.youtube);
     const src = it.banner || (yt ? ytThumb(yt, true) : '') || it.poster || '';
-    const media = src
-      ? '<img src="' + esc(src) + '" alt="" ' + (yt ? 'data-hq="' + esc(ytThumb(yt)) + '"' : '') + '>' : '';
+    const media = it.bannerVideo
+      ? '<video src="' + esc(it.bannerVideo) + '" autoplay muted loop playsinline preload="metadata"' +
+        (src ? ' poster="' + esc(src) + '"' : '') + '></video>'
+      : src
+        ? '<img src="' + esc(src) + '" alt="" ' + (yt ? 'data-hq="' + esc(ytThumb(yt)) + '"' : '') + '>'
+        : '';
     hero.innerHTML =
       '<div class="hero-slide">' +
         '<div class="hero-media">' + media + '</div><div class="hero-shade"></div>' +
@@ -215,7 +219,14 @@
     const startId = yt || (eps[0] ? ytId(eps[0].youtube) : '');
 
     let media;
-    if (startId) {
+    if (it.previewVideo) {
+      const tabs = startId
+        ? '<div class="modal-media-tabs"><button class="active" type="button" data-media-source="preview">Video preview</button>' +
+          '<button type="button" data-media-source="youtube">YouTube</button></div>'
+        : '';
+      media = tabs + '<div class="modal-media" id="modalMedia"><video src="' + esc(it.previewVideo) +
+        '" controls autoplay muted playsinline preload="metadata"></video></div>';
+    } else if (startId) {
       media = '<div class="modal-media" id="modalMedia">' + embed(startId, !!yt, it.title) + '</div>';
     } else {
       const src = it.banner || it.poster;
@@ -226,17 +237,20 @@
 
     const meta = [cat.label, it.year, it.duration].filter(Boolean).join(' · ');
 
-    let actions = '';
-    if (it.streamUrl) {
-      actions += '<a class="btn primary" href="' + esc(it.streamUrl) + '" target="_blank" rel="noopener">▶ Watch on ' + esc(it.platform || 'streaming site') + '</a>';
+    const watchOptions = (it.watchOptions || []).filter(option => option && option.url);
+    if (it.streamUrl && !watchOptions.some(option => option.url === it.streamUrl)) {
+      watchOptions.unshift({ url: it.streamUrl, platform: it.platform || 'streaming site' });
     }
+    let actions = watchOptions.map((option, index) =>
+      '<a class="btn' + (index === 0 ? ' primary' : '') + '" href="' + esc(option.url) +
+      '" target="_blank" rel="noopener">▶ Watch on ' + esc(option.platform || 'streaming site') + '</a>').join('');
     if (startId) {
-      actions += '<a class="btn' + (it.streamUrl ? '' : ' primary') + '" id="modalYt" href="' + esc(ytWatch(startId)) +
+      actions += '<a class="btn' + (watchOptions.length ? '' : ' primary') + '" id="modalYt" href="' + esc(ytWatch(startId)) +
         '" target="_blank" rel="noopener">Watch on YouTube ↗</a>';
     }
 
     let notice = '';
-    if (!it.streamUrl && isPoster) {
+    if (!watchOptions.length && !it.streamUrl && isPoster) {
       notice = it.whereToWatch || 'Not available on streaming yet. Details coming soon.';
     } else if (it.whereToWatch) {
       notice = it.whereToWatch;
@@ -265,6 +279,7 @@
     const it = ITEMS.find(i => i.id === id);
     if (!it) return;
     lastFocus = document.activeElement;
+    modalBox.dataset.itemId = it.id;
     modalBox.innerHTML = modalHTML(it);
     modal.hidden = false;
     modal.scrollTop = 0;
@@ -343,6 +358,23 @@
       if (media) media.innerHTML = embed(ep.dataset.ep, true, title);
       if (yl) yl.href = ytWatch(ep.dataset.ep);
       modalBox.querySelectorAll('.ep').forEach(b => b.classList.toggle('active', b === ep));
+      modalBox.querySelectorAll('[data-media-source]').forEach(b =>
+        b.classList.toggle('active', b.dataset.mediaSource === 'youtube'));
+      return;
+    }
+
+    const mediaSource = t.closest('[data-media-source]');
+    if (mediaSource) {
+      const it = ITEMS.find(item => item.id === modalBox.dataset.itemId);
+      const media = $('#modalMedia');
+      if (it && media) {
+        const id = ytId(it.youtube) || ytId((it.episodes || []).find(episode => ytId(episode.youtube))?.youtube);
+        media.innerHTML = mediaSource.dataset.mediaSource === 'preview'
+          ? '<video src="' + esc(it.previewVideo) + '" controls autoplay muted playsinline preload="metadata"></video>'
+          : embed(id, true, it.title);
+        modalBox.querySelectorAll('[data-media-source]').forEach(button =>
+          button.classList.toggle('active', button === mediaSource));
+      }
       return;
     }
 
