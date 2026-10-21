@@ -72,14 +72,6 @@ window.DBFLIX = {
     /* ---------------- MOVIES ---------------- */
     {
       id: "movie-1", category: "movies", title: "Love You So Bad",
-      date: "2025-25-12", year: 2025, duration: "1h 52m",
-      poster: "images/posters/lysb_poster.jpeg", banner: "images/banners/movie-1.jpg",
-      description: "A sample movie that IS available on streaming. Clicking its poster goes straight to the streaming link. Hover and press the (i) button to see its details instead.",
-      streamUrl: "https://example.com/watch/movie-one", platform: "Your Streaming Platform",
-      tags: ["drama", "romance"], featured: true
-    },
-    {
-      id: "movie-2", category: "movies", title: "Love You So Bad",
       date: "2025-12-25", year: 2025, duration: "1h 52",
       poster: "images/posters/lsyb_poster.jpeg", banner: "images/banners/movie-2.jpg",
       description: "Sassy, confident, and unapologetically herself, college senior Savannah is determined to live life on her own terms. She finds herself torn between two different men: bad boy and chich magnet L.A. who fuels her wild side, and principled and ambitious Vic who challenges her to grow. As old wounds resurface and difficult choices confront her, she must devide who she really wants to be and who she dares to love.",
@@ -87,6 +79,14 @@ window.DBFLIX = {
       whereToWatch: "Avaible in Netflix",
       details: { "Release": "Dec 25, 2026", "Where": "Cinemas nationwide" },
       tags: ["Romantic comedy", "Coming-of-age drama"]
+    },
+    {
+      id: "movie-2", category: "movies", title: "Guilty Pleasure",
+      date: "2024-10-16", year: 2024, duration: "1h 59",
+      poster: "images/posters/guiltypleasure.jpeg", banner: "images/banners/movie-1.jpg",
+      description: "Explores the complex relationships and personal struggles of three ambitious lawyers as they navigate their way through love, betrayal, and ambition.",
+      streamUrl: "https://www.netflix.com/search?q=guilty%20pleasure&jbv=81997707", platform: "Netflix",
+      tags: ["drama", "romance"], featured: true
     },
 
     /* ---------------- SERIES ---------------- */
